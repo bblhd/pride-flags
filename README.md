@@ -2,7 +2,7 @@
 A WIP C based pride flag displayer.
 
 Currently flags are different widths in order to keep a similar aspect ratio,
-if you want to use this I recommend modifying the code to achieve the behaviour you want.
+if you want to use the program I recommend modifying the code to achieve the behaviour you want.
 
 ## How to compile
 Compile using `make` or `make compile`, and then install it to /usr/local/bin by running `make install` as root.
