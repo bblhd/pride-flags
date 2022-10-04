@@ -1,5 +1,5 @@
 # pride-flags
-A WIP C based pride flag displayer.
+A WIP C based CLI pride flag displayer.
 
 Currently flags are different widths in order to keep a similar aspect ratio,
 if you want to use the program I recommend modifying the code to achieve the behaviour you want.
