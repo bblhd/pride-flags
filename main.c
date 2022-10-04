@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define rgb(r, g, b) 16 + b + g * 6 + r * 36
+#define rgb(r, g, b) (16 + b + g * 6 + r * 36)
 
 void printFlagRow(int w, int c) {
 	printf("\033[38:5:%im",c);
