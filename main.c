@@ -8,7 +8,7 @@
 void printFlagRow(int w, int c) {
 	printf("\033[38;5;%im",c);
 	for (int i = 0; i < w; i++) printf("█");
-	printf("\n");
+	printf("\e[0m\n");
 }
 
 void printFlag(int w, int *cs) {
@@ -18,7 +18,7 @@ void printFlag(int w, int *cs) {
 void print23Flag(int *cs) {
 	int len = 0;
 	for (; cs[len]; len++);
-	for (; *cs; cs++) printFlagRow(len*5*3/2/2, *cs);
+	printFlag(len*5*3/2/2, cs);
 }
 
 struct Flag {
