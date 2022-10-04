@@ -6,7 +6,7 @@
 #define rgb(r, g, b) (16 + b + g * 6 + r * 36)
 
 void printFlagRow(int w, int c) {
-	printf("\e[38;5;%im",c);
+	printf("\e[48;5;%im\e[38;5;%im",c,c);
 	for (int i = 0; i < w; i++) printf("█");
 	printf("\e[0m\n");
 }
